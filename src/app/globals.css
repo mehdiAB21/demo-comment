@@ -1,7 +1,8 @@
 @import "tailwindcss";
 
 body {
-  height: 100vh;
+  min-height: 100vh;
+  background-repeat: no-repeat;
   background-image: linear-gradient(to bottom, #cad16b, #8cd587, #48d2af, #00cbd4, #26beea, #41bff0, #56bff4, #69bff8, #52cffe, #41dfff, #46eefa, #5ffbf1);
   font-family: Arial, Helvetica, sans-serif;
   padding: 15px;
@@ -53,3 +54,98 @@ footer a {
 footer a:hover {
   text-decoration: underline;
 }
+
+
+.glass-input {
+  padding: 12px 16px;
+  border-radius: 12px;
+  background: rgba(69, 68, 68, 0.36); 
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  color: #fff;
+  font-size: 16px;
+  outline: none;
+  transition: all 0.3s ease;
+}
+
+.glass-input::placeholder {
+  color: rgba(255, 255, 255, 0.7);
+}
+
+.glass-input:focus {
+  background: rgba(68, 65, 65, 0.471);
+  box-shadow: 0 0 8px rgba(255, 255, 255, 0.2);
+}
+
+
+.glass-textarea {
+  width: 100%;
+  min-height: 120px;              /* ارتفاع پایه */
+  padding: 12px 16px;             /* فاصله داخلی مناسب */
+  border-radius: 12px;            /* گوشه‌های نرم */
+  resize: vertical;               /* فقط ارتفاع قابل تغییر باشد */
+  font-size: 16px;
+  color: #fff;
+  font-family: "B Nazanin", sans-serif;
+  background: rgba(69, 68, 68, 0.36); 
+
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+
+  /* انیمیشن و تمرکز */
+  transition: all 0.3s ease;
+  outline: none;
+}
+
+.glass-textarea::placeholder {
+  color: rgba(255, 255, 255, 0.7);
+}
+
+.glass-textarea:focus {
+  background: rgba(68, 65, 65, 0.471);
+  box-shadow: 0 6px 25px rgba(255, 255, 255, 0.25);
+  border-color: rgba(255, 255, 255, 0.6);
+}
+
+
+.glass-button {
+  padding: 10px 24px;
+  border: 1px solid rgba(255, 255, 255, 0.4);
+  border-radius: 12px;
+  background: rgba(20, 243, 8, 0.36);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  color: #fff;
+  font-size: 16px;
+  font-weight: 500;
+  letter-spacing: 0.5px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+}
+
+.glass-button:hover {
+  background: rgba(4, 226, 11, 0.473);
+  box-shadow: 0 4px 25px rgba(255, 255, 255, 0.25);
+  transform: translateY(-2px);
+}
+
+.glass-button:active {
+  transform: translateY(0);
+  box-shadow: 0 2px 10px rgba(255, 255, 255, 0.15);
+}
+
+/* 
+pre {
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 12px;
+  padding: 16px;
+  color: #fff;
+  font-family: "Fira Code", monospace;
+  overflow-x: auto;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  backdrop-filter: blur(10px);
+} */

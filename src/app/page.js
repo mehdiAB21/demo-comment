@@ -8,11 +8,18 @@ export default function Home() {
       </div>
       <div className="text-center m-10 glass-box">
         <div className="mb-4">
-          <p >Start Test</p>
+          <p >Start SQLi Test:</p>
         </div>
         <div>
-          <Link href="/safeMode" className="bg-green-600 m-2 p-2 rounded-full cursor-pointer">Safe Mode</Link>
-          <Link href="" className="bg-red-500 m-2 p-2 rounded-full cursor-pointer">Danger Mode</Link>
+          <Link href="/sendComment" className="bg-green-600 m-2 p-2 rounded-full cursor-pointer">Try SQLi Demo</Link>
+        </div>
+      </div>
+      <div className="text-center m-10 glass-box">
+        <div className="mb-4">
+          <p >Start XSS Test:</p>
+        </div>
+        <div>
+          <Link href="/showComments" className="bg-green-600 m-2 p-2 rounded-full cursor-pointer">Try XSS Demo</Link>
         </div>
       </div>
       <footer className="">
