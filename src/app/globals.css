@@ -1,26 +1,55 @@
 @import "tailwindcss";
 
-:root {
-  --background: #ffffff;
-  --foreground: #171717;
-}
-
-@theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
-}
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
-}
-
 body {
-  background: var(--background);
-  color: var(--foreground);
+  height: 100vh;
+  background-image: linear-gradient(to bottom, #cad16b, #8cd587, #48d2af, #00cbd4, #26beea, #41bff0, #56bff4, #69bff8, #52cffe, #41dfff, #46eefa, #5ffbf1);
   font-family: Arial, Helvetica, sans-serif;
+  padding: 15px;
+}
+
+
+.glass-box {
+  padding: 20px;
+  border-radius: 16px; 
+  text-align: center;
+
+
+  background: rgba(255, 255, 255, 0.15); 
+  backdrop-filter: blur(10px); 
+  -webkit-backdrop-filter: blur(10px); 
+
+  
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+
+  color: #000000;
+  font-family: "B Nazanin", sans-serif;
+  font-size: 14pt;
+
+  transition: all 0.3s ease;
+}
+
+.glass-box:hover {
+  background: rgba(255, 255, 255, 0.25);
+  box-shadow: 0 8px 40px 0 rgba(31, 38, 135, 0.45);
+}
+
+
+footer {
+  width: 100%;
+  font-size: 14px;
+  text-align: center;
+  padding: 20px;
+  background: rgba(255,255,255,0.1);
+  backdrop-filter: blur(10px);
+  border-top: 1px solid rgba(255,255,255,0.3);
+  position: fixed;
+  bottom: 0;
+}
+footer a {
+  color: #fb935f;
+  text-decoration: none;
+}
+footer a:hover {
+  text-decoration: underline;
 }
