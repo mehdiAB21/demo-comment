@@ -16,6 +16,5 @@ export default function safeMode() {
       </div>
       <StepOne />
     </div>
-
   )
 }
